@@ -56,13 +56,7 @@
           <span class="text text--bold text--center text--primary">{{favorite.course.name}}</span>
           <div class="favorites__item__infos favorites__item__infos--row">
             <span class="text">{{favorite.university.score}}</span>
-            <span
-              v-for="i in Math.round(favorite.university.score)"
-              :key="i"
-              class="text"
-            >
-              X
-            </span>
+            <Stars :count="Math.round(favorite.university.score)" />
           </div>
         </div>
         <div class="favorites__item__infos">
@@ -101,9 +95,10 @@
 <script>
 import Axios from 'axios';
 import Modal from './components/modal/Modal';
+import Stars from '../stars/Stars';
 export default {
   name: 'Body',
-  components: { Modal },
+  components: { Modal, Stars },
   data () {
     return {
       favorites: [],

@@ -133,10 +133,31 @@
 
       &--check { flex: 1; }
 
-      &--infos { flex: 5; }
+      &--infos {
+        flex: 5;
+        
+        .results__item__column--prices {
+          display: none;
+        }
+
+        @media (max-width: $mobile) {
+          .results__item__column--prices {
+            display: flex;
+          }
+        }
+      }
       
-      &--prices { flex: 3; }
+      &--prices {
+        flex: 3;
+        @media (max-width: $mobile) {
+          display: none;
+        }
+      }
     }
+
+    @media (max-width: $mobile) {
+      min-height: 10rem;
+    }    
   }
 }
 

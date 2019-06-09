@@ -57,7 +57,6 @@
       <div class="results">
         <div class="results__infos">
           <span class="text text--bold">Resultado:</span>
-          <span class="text">{{scholarships.filter(applyFilter).length}} items encontrados</span>
           <div class="results__infos--sort">
             <span class="text text--right">
               Ordenar por
@@ -89,6 +88,10 @@
             <span class="text">
               {{scholarship.campus.city}}
             </span>
+            <div class="results__item__column results__item__column--prices">
+              <span class="text text--right">Bolsa de <span class="text text--green">{{scholarship.discount_percentage}}%</span></span>
+              <span class="text text--right text--green text--bold">R${{scholarship.price_with_discount}}</span>
+            </div>
           </div>
           <div class="results__item__column results__item__column--prices">
             <span class="text text--right">Bolsa de <span class="text text--green">{{scholarship.discount_percentage}}%</span></span>
