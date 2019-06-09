@@ -25,6 +25,12 @@
     color: $textBlack;
   }
 
+  &--disabled {
+    border: 1px solid $dark;
+    background: $gray;
+    color: $textBlack;
+  }
+
   &:hover {
     transform: scale(1.02);
     box-shadow: 0 0 5px $dark;

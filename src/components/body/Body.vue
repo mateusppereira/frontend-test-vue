@@ -78,8 +78,8 @@
           <button class="button button--outline" @click="removeFavorite(favorite.id)">
             Excluir
           </button>
-          <button class="button button--yellow">
-            Ver oferta
+          <button :class="`button ${favorite.enabled ? 'button--yellow' : 'button--disabled'}`">
+            {{favorite.enabled ? 'Ver oferta' : 'Indisponível' }}
           </button>
         </div>
       </div>
