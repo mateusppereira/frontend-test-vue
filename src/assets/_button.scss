@@ -1,0 +1,32 @@
+@import "./variables";
+
+.button {
+  cursor: pointer;
+  border: 1px solid $textBlack;
+  background: $blueSecondary;
+  color: $white;
+  border-radius: 3px;
+  padding: .5rem 1.6rem;
+  margin: .2rem;
+  font-weight: 700;
+
+  transition: all .1s;
+
+  &--outline {
+    background: transparent;
+    border: 1px solid $blueSecondary;
+    color: $blueSecondary;
+
+  }
+
+  &--yellow {
+    border: 1px solid $yellowSecondary;
+    background: $yellowPrimary;
+    color: $textBlack;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px $dark;
+  }
+}

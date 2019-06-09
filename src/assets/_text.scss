@@ -1,0 +1,30 @@
+@import "./variables";
+
+$font-size-xsm: 1rem;
+$font-size-sm: 1.2rem;
+$font-size: 1.4rem;
+$font-size-lg: 1.8rem;
+$font-size-xlg: 2.2rem;
+$font-size-xxlg: 3rem;
+
+.text {
+  pointer-events: none;
+  color: $textBlack;
+  font-size: $font-size;
+  padding: 0 .5rem;
+
+  &--center { text-align: center; }
+  &--right { text-align: right; }
+  &--bold { font-weight: 900; }
+  &--uppercase { text-transform: uppercase; }
+  &--line-through { text-decoration: line-through  }
+  &--primary { color: $bluePrimary; }
+  &--green { color: $green; }
+  &--white { color: $white; }
+  &--dark { color: $dark; }
+  &--xsm { font-size: $font-size-xsm; }
+  &--sm { font-size: $font-size-sm; }
+  &--lg { font-size: $font-size-lg; }
+  &--xlg { font-size: $font-size-xlg; }
+  &--xxlg { font-size: $font-size-xxlg; }
+}

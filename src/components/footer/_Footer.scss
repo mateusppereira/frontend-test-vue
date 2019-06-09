@@ -1,0 +1,78 @@
+@import '../../assets/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 15rem;
+  background: $bgGray;
+}
+
+.contacts {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: $blueSecondary;
+  padding: 0 5rem;
+
+  @media (max-width: $mobile) {
+    flex: 2;
+    &__item--main {
+      min-width: 100%;
+    }
+    & .text {
+      font-size: 2rem;
+    }
+  };
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 1rem;
+
+    i { color: $white; padding: 0 .5rem; }
+
+    &__caption {
+      display: none;
+    }
+
+    &__infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    @media (max-width: $mobile) {
+      & + & {
+        .contacts__item__infos { display: none; }
+        flex-direction: column;
+        width: 30%;
+
+        .contacts__item__caption {
+          display: flex;
+          margin-top: 1rem;
+          font-size: 1.6rem;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  background: $bluePrimary;
+}
