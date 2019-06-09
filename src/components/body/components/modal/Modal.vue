@@ -103,7 +103,10 @@
         <button class="button button--outline" @click="toggleModal()">
           Cancelar
         </button>
-        <button class="button button--yellow" @click="addFavorites()">
+        <button
+          :class="`button ${selectds.length > 0 ? 'button--yellow' : 'button--disabled' }`"
+          @click="selectds.length > 0 && addFavorites()"
+        >
           Adicionar bolsa(s)
         </button>
       </div>
