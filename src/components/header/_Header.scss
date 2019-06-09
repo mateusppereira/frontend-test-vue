@@ -59,9 +59,15 @@
     
       padding: 0 1rem;
     
-      &--img {
+      &__img {
         width: 3.2rem;
         height: 3rem;
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     
       @media (max-width: $mobile) {

@@ -7,8 +7,11 @@
           <span class="text text--bold text--primary">Como funciona</span>
         </div>
         <div class="top__left__contacts">
-          <img class="top__left__contacts--img" :src="wppImg">
-          <span class="text text--bold text--primary">Como funciona</span>
+          <img class="top__left__contacts__img" :src="wppImg">
+          <div class="top__left__contacts__info">
+            <span class="text text--bold text--primary">0800 123 2222</span>
+            <span class="text text--sm text--primary">Envie mensagem ou ligue</span>
+          </div>
         </div>
       </div>
       <img  class="top__logo" src="http://izabelahendrix.edu.br/noticias/2018/quero-bolsa-entrevista-reitor-e-psicologa-do-izabela-sobre-saude-mental-de-universitarios/@@images/ae57c16e-32df-4f50-94ed-fbfdee916748.png" />
