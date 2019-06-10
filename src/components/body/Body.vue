@@ -5,7 +5,7 @@
         <li class="top__breadcumb__item">
           <span class="text text--primary text--sm text--bold">Home</span>
         </li>
-        <li class="top__breadcumb__item">
+        <li class="top__breadcumb__item top__breadcumb__item--previous">
           <span class="text text--primary text--sm text--bold">Minha conta</span>
         </li>
         <li class="top__breadcumb__item top__breadcumb__item--selected">
@@ -55,8 +55,15 @@
           <span class="text text--bold text--center">{{favorite.university.name}}</span>
           <span class="text text--bold text--center text--primary">{{favorite.course.name}}</span>
           <div class="favorites__item__infos favorites__item__infos--row">
-            <span class="text">{{favorite.university.score}}</span>
-            <Stars :count="Math.round(favorite.university.score)" />
+            <span class="text text--bold">{{favorite.university.score}}</span>
+            <StarRating
+              read-only
+              :show-rating="false"
+              :star-size="20"
+              :increment=".5"
+              :rating="favorite.university.score"
+            />
+            <!-- <Stars :count="Math.round(favorite.university.score)" /> -->
           </div>
         </div>
         <div class="favorites__item__infos">
@@ -95,10 +102,12 @@
 <script>
 import Axios from 'axios';
 import Modal from './components/modal/Modal';
-import Stars from '../stars/Stars';
+// import Stars from '../stars/Stars';
+import StarRating from 'vue-star-rating'
+
 export default {
   name: 'Body',
-  components: { Modal, Stars },
+  components: { Modal, StarRating },
   data () {
     return {
       favorites: [],

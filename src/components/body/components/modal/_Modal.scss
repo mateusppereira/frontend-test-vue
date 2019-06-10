@@ -87,7 +87,11 @@
       i { color: $bluePrimary; }
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
+    }
+
+    @media (max-width: $mobile) {
+      min-width: 100%;
     }
   }
 }
@@ -102,11 +106,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    min-height: 4rem;
 
     &--sort select {
       border: 0;
       background: transparent;
       color: $bluePrimary;
+
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -131,7 +139,12 @@
         }
       }
 
-      &--check { flex: 1; }
+      &--check {
+        flex: 1;
+        @media (max-width: $mobile) {
+          i { font-size: 2rem; }
+        }
+      }
 
       &--infos {
         flex: 5;
