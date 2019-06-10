@@ -8,7 +8,7 @@
           <span class="text text--white">Seg-Sex 08h-22h</span>
         </div>
       </div>
-      <div class="contacts__item">
+      <div class="contacts__item contacts__item--sub">
         <i class="fas fa-comments fa-7x" />
         <div class="contacts__item__infos">
           <span class="text text--white text--bold">Chat ao vivo</span>
@@ -16,7 +16,7 @@
         </div>
         <span class="contacts__item__caption">Chat</span>
       </div>
-      <div class="contacts__item">
+      <div class="contacts__item contacts__item--sub">
         <i class="fas fa-envelope fa-7x" />
         <div class="contacts__item__infos">
           <span class="text text--white text--bold">Mande um e-mail</span>
@@ -24,7 +24,7 @@
         </div>
         <span class="contacts__item__caption">E-mail</span>
       </div>
-      <div class="contacts__item">
+      <div class="contacts__item contacts__item--sub">
         <i class="fas fa-info-circle fa-7x" />
         <div class="contacts__item__infos">
           <span class="text text--white text--bold">Central de ajuda</span>

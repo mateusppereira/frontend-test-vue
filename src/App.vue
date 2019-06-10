@@ -19,9 +19,8 @@
 
     color: $textBlack;
     font-size: 62.5%;
-    @media (max-width: $mobile) {
-      font-size: 52.5%;
-    }
+    @media (max-width: $tablet) { font-size: 58.5%; }
+    @media (max-width: $mobile) { font-size: 52.5%; }
   }
 
   #app {
